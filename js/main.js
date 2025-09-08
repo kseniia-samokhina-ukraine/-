@@ -119,7 +119,7 @@ if(sumPurchases < 200) {
     alert(`Знижка 7%. Сума оплати зі знижкою ${sumPurchases - (sumPurchases * 0.07)}`)
 }
 
-// 3
+// 3 
 
 let positiveCount = 0;
 let negativeCount = 0;
@@ -127,7 +127,7 @@ let zeroCount = 0;
 let evenCount = 0;
 let oddCount = 0
 
-for (i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++){
     let inputUser = +prompt(`Будь ласка, введіть число №${i + 1} з 10:`);
     if (!isNaN(inputUser)) {
         if (inputUser > 0) {
@@ -191,10 +191,10 @@ while(!found){
     }
 }
 
-// 2
+// 2 
 
-for (i = 2; i <= 9; i++){
-    for (x = 1; x <= 10; x++) {
+for (let i = 2; i <= 9; i++){
+    for (let x = 1; x <= 10; x++) {
         let result = i * x;
         let answer = confirm(`${i} * ${x} = ${result}`);
         if(answer) {
